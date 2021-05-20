@@ -14,7 +14,7 @@ namespace Visualisation.Utils
                 {
                     if (graphModel.MatrixSmezh[i, j] != EdgeType.none)
                     {
-                        graphModel.AddEdge(new EdgeData(graphModel.Vertices.ElementAt(i), graphModel.Vertices.ElementAt(j)));
+                        graphModel.AddEdge(new EdgeData(graphModel.Vertices.ElementAt(i), graphModel.Vertices.ElementAt(j), graphModel.MatrixSmezh[i, j]));
                     }
                 }
             }

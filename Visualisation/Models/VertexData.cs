@@ -119,11 +119,11 @@ namespace Visualisation.Models
         {
             if (isResearchedV)
             {
-                return $"Vertex: Fe + {reagentV} = {productV} + H2 \t environment = {environmentV} \t solvent = {solventV} \t phase = {phaseV} \t Temperature = {TV} \t Researched? {isResearchedV} \t CriticalPoint = {criticalPointV}";
+                return $"Vertex: Fe + {reagentV} = {productV} + H2 \n environment = {environmentV} \n solvent = {solventV} \n phase = {phaseV} \n Temperature = {TV} \n Researched? {isResearchedV} \n CriticalPoint = {criticalPointV}";
             }
             else
             {
-                return $"Vertex: Fe + {reagentV} = {productV} \t environment = {environmentV} \t solvent = {solventV} \t phase = {phaseV} \t Temperature = {TV} \t Researched? {isResearchedV} \t CriticalPoint = {criticalPointV}";
+                return $"Vertex: Fe + {reagentV} = {productV} \n environment = {environmentV} \n solvent = {solventV} \n phase = {phaseV} \n Temperature = {TV} \n Researched? {isResearchedV} \n CriticalPoint = {criticalPointV}";
             }
         }
     }

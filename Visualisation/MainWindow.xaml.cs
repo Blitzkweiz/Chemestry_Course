@@ -1,5 +1,6 @@
 ﻿using GraphX.Common.Enums;
 using GraphX.Controls;
+using GraphX.Logic.Algorithms.LayoutAlgorithms;
 using System;
 using System.Windows;
 using Visualisation.Models;
@@ -39,7 +40,7 @@ namespace Visualisation
             Area.GenerateGraph(true, true);
             Area.SetEdgesDashStyle(EdgeDashStyle.Solid);
             Area.ShowAllEdgesArrows(false);
-            Area.ShowAllEdgesLabels(false);
+            Area.ShowAllEdgesLabels(true);
 
             zoomctrl.ZoomToFill();
         }
@@ -59,7 +60,6 @@ namespace Visualisation
 
             logicCore.DefaultLayoutAlgorithm = LayoutAlgorithmTypeEnum.LinLog;
             logicCore.DefaultLayoutAlgorithmParams = logicCore.AlgorithmFactory.CreateLayoutParameters(LayoutAlgorithmTypeEnum.LinLog);
-            //((SimpleTreeLayoutParameters)logicCore.DefaultLayoutAlgorithmParams).VertexGap = 100000;
 
             logicCore.DefaultOverlapRemovalAlgorithm = OverlapRemovalAlgorithmTypeEnum.FSA;
             logicCore.DefaultOverlapRemovalAlgorithmParams.HorizontalGap = 100;

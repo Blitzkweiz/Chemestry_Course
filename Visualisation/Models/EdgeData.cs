@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Visualisation.Enums;
 
 namespace Visualisation.Models
 {
@@ -9,7 +10,10 @@ namespace Visualisation.Models
     {
         public string Text { get; set; }
 
-        public EdgeData(VertexData source, VertexData target, double weight = 1) : base(source, target, weight) { }
+        public EdgeData(VertexData source, VertexData target, EdgeType edgeType = EdgeType.none, double weight = 1) : base(source, target, weight) 
+        {
+            Text = edgeType.ToString();
+        }
 
         public EdgeData() : base(null, null, 1) { }
 
