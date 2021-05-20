@@ -1,22 +1,7 @@
 ﻿using GraphX.Common.Enums;
 using GraphX.Controls;
-using GraphX.Logic.Algorithms.LayoutAlgorithms;
-using Kursach_3kurs.Enums;
-using Kursach_3kurs;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using Visualisation.Models;
 
 namespace Visualisation
@@ -63,10 +48,7 @@ namespace Visualisation
         {
             var graphData = new GraphModel();
 
-            var graph = new Graph();
-
-            Utils.Utils.CreateVertecies(ref graphData, graph.Vertecies);
-            Utils.Utils.CreateEdges(ref graphData, graph.MatrixSmezh, graph.Vertecies.Count);
+            Utils.Utils.CreateEdges(ref graphData);
 
             return graphData;
         }

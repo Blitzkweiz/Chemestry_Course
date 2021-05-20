@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Kursach_3kurs.Enums
+﻿namespace Visualisation.Enums
 {
     public enum EnvironmentType
     {

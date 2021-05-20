@@ -11,8 +11,4 @@
     <PackageReference Include="QuickGraphCore" Version="1.0.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Kursach_3kurs\Kursach_3kurs.csproj" />
-  </ItemGroup>
-
 </Project>
