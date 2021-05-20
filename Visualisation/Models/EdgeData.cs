@@ -1,0 +1,21 @@
+﻿using GraphX.Common.Models;
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Visualisation.Models
+{
+    public class EdgeData : EdgeBase<VertexData>
+    {
+        public string Text { get; set; }
+
+        public EdgeData(VertexData source, VertexData target, double weight = 1) : base(source, target, weight) { }
+
+        public EdgeData() : base(null, null, 1) { }
+
+        public override string ToString()
+        {
+            return Text;
+        }
+    }
+}
